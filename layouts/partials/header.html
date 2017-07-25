@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ .Title }} - {{ .Site.Title }}</title>
+        <link rel="stylesheet" href="{{ "/css/normalize.css" | relURL }}" />
+        <link rel="stylesheet" href="{{ "/css/milligram.min.css" | relURL }}" />
+        <link rel="stylesheet" href="{{ "/css/custom.css" | relURL }}" />
+    </head>
+    <body>
+        <header class="hidden-large">
+            <nav class="clearfix pls">
+                <a class="button button-outline button-red float-left mbz mts" href="/" style="padding: 0">
+                    <img src="/img/logo.png" style="display:inline" width="36px">
+                </a>
+                <div class="align-r float-right inline-block pts prs">
+                {{ range .Site.Menus.main }}
+                    <a class="button button-clear button-red" href="{{ .URL | relURL }}">{{ .Name }}</a>
+                {{ end }}
+                <div>
+            </nav>
+        </header>
+        <header class="hidden-small container pts">
+            <div class="row">
+                <div class="column column-20">
+                    <a href="/">
+                        <img src="/img/logo.png">
+                    </a>
+                </div>
+                <div class="column">
+                    <h1 class="red" style="padding-top: 7rem">Space Coast DSA Organizing Committee</h1>
+                    <h2 class="black">{{ .Title }}</h2>
+                </div>
+            </div>
+        </header>

@@ -1,0 +1,14 @@
+baseURL = "http://socialists.space/"
+languageCode = "en-us"
+title = "Space Coast DSA"
+
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Register Interest"
+    url = "/register-interest"
+    weight = 2

@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'ManifoldDSA';
+    src: url('/font/ManifoldDSA-Regular/ManifoldDSA-Regular.woff2') format('woff2'),
+         url('/font/ManifoldDSA-Regular/ManifoldDSA-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: ManifoldDSA, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+body > header {
+    padding: 0 0 1rem 0 !important;
+}
+
+.hidden-large nav {
+    background-color: #EC1F27;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.black { color: #231F20 !important; }
+.red { color: #EC1F27 !important; }
+
+
+.button-red {
+    background-color: #EC1F27;
+    border-color: #EC1F27;
+    color: #000000;
+}
+
+.button-red.button-clear,
+.button-red.button-outline {
+    background-color: #FFFFFF;
+    color: #EC1F27;
+    border-color: #EC1F27;
+}
+
+.align-r { text-align: right; }
+.inline { display: inline; }
+.inline-block { display: inline-block; }
+
+.mbz { margin-bottom: 0 !important; }
+.mlz { margin-left: 0 !important; }
+.mts { margin-top: 1rem !important; }
+.pbs { padding-bottom: 1rem !important; }
+.pls { padding-left: 1rem !important; }
+.plz { padding-left: 0rem !important; }
+.prs { padding-right: 1rem !important; }
+.pts { padding-top: 1rem !important; }
+
+
+@media (min-width: 1150px) {
+    body.container {
+        max-width: 0 !important;
+    }
+    .hidden-large {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1150px) {
+    .hidden-small {
+        display: none !important;
+    }
+}

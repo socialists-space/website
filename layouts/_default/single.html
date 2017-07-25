@@ -1,0 +1,24 @@
+{{ partial "header.html" . }}
+    <main class="container hidden-large">
+        <h3 class="red">{{ .Title }}</h3>
+        {{ .Content }}
+    </main>
+    <main class="container hidden-small plz">
+        <div class="row">
+            <nav class="column column-20">
+            {{ range .Site.Menus.main }}
+                <a class="button button-clear button-red full-width" href="{{ .URL | relURL }}">{{ .Name }}</a>
+            {{ end }}
+            </nav>
+            <article class="column">
+                <header class="article-meta">
+                    {{ with .Params.author }}<h2 class="author">{{ . }}</h2>{{ end }}
+                    {{ if .Params.date }}<h2 class="date">{{ .Date.Format "2006/01/02" }}</h2>{{ end }}
+                </header>
+                <div>
+                    {{ .Content }}
+                </div>
+            </article>
+        </div>
+    </main>
+{{ partial "footer.html" . }}
