@@ -12,3 +12,13 @@ title = "Space Coast DSA"
     name = "Register Interest"
     url = "/register-interest"
     weight = 2
+
+[[menu.main]]
+    name = "Facebook"
+    url = "http://facebook.com/socialists.space"
+    weight = 3
+
+[[menu.main]]
+    name = "Twitter"
+    url = "http://twitter.com/spacecoastdsa"
+    weight = 4
